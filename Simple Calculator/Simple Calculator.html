@@ -1,21 +1,37 @@
 <html>
-    <link href="myStyleCss.css" rel="stylesheet">
+    <head>
+        <link href="myStyleCss.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
     <body>
-        <script src="Javascript2.js"></script>
-        <title>Simple Calculator</title>
-        <header>Simple Calculator</header>
-        <dive calss = input>
-            <input type=text id="input1"><br>
-            <input type=text id="input2"><br>
-        </dive>
-      
-        <div class = operation>
-            <input type=button id="add" value="+">
-            <input type=button id="subtract" value="-">
-            <input type=button id="multuply" value="*">
-            <input type=button id="divide" value="/">
-        </div>
        
+        <header>Simple Calculator</header>
+        
+       
+            <div class = "input">
+                <p>First Number</p>
+                <input type=text id="input1" class="form-control"><br>
+                <p>Second Number</p>
+                <input type=text id="input2" class="form-control"><br>
+            </div>
+        
+        <div class="container justify-content-center text-center">
+            <div class = "operation">
+                <button type="button" class="btn btn-primary" id="add" >+</button>
+                <button type="button" class="btn btn-primary" id="subtract">-</button>
+                <button type="button" class="btn btn-primary" id="multiply">*</button>
+                <button type="button" class="btn btn-primary" id="divide">/</button><br>
+               
+            </div>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="boxcheck">
+            <label class="form-check-label" for="boxcheck">Night Mode</label>
+          </div>
+        <p id="result">0</p>
+       
+        <script src="Javascript2.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         
     </body>
 
